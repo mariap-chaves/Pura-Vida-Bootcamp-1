@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-stellar to-stellar-light text-white;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-stellar-accent hover:bg-cyan-400 text-stellar font-semibold rounded-lg transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-stellar-light hover:bg-stellar font-semibold rounded-lg transition-colors border border-stellar-accent;
+  }
+
+  .card {
+    @apply bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-stellar-accent transition-colors;
+  }
+}
